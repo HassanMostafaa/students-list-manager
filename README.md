@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Student List Manager
 
-## Getting Started
+Student List Manager is a simple application built with Next.js for managing student lists. It allows users to transfer students between two lists, select and deselect students, and reset the application to its default state.
 
-First, run the development server:
+## Design
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+The design of the application follows a Glassmorphism UI concept, featuring transparent and blurred elements for a modern and sleek look. The student cards and buttons have a glass-like appearance, with soft shadows and rounded corners.
+
+## Logic
+
+The application logic revolves around managing two lists of students. Users can select and deselect students by clicking on their cards. They can also transfer students between the two lists with the provided buttons. The application prevents duplicates when transferring students and provides feedback to users when errors occur, such as duplicate entries.
+
+## Tech Stack
+
+- **Next.js**: React framework for building server-side rendered and static web applications.
+- **TypeScript**: Provides static typing to JavaScript for enhanced code quality and development experience.
+- **Styled Components**: Library for styling React components with scoped and dynamic CSS.
+- **Zustand**: State management library for React applications, used for managing application state.
+
+## How to Use
+
+### Prerequisites
+
+Make sure you have Node.js and npm installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+git clone <repository_url>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+2. Navigate to the project directory:
 
-## Learn More
+`cd student-list-manager`
 
-To learn more about Next.js, take a look at the following resources:
+3. Install dependencies:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+`npm install`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Running the Application
 
-## Deploy on Vercel
+To run the application in development mode:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+`npm run dev`
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The application will be available at [http://localhost:3000](http://localhost:3000).
+
+### Testing the Application
+
+1. Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
+2. You will see two lists of students. You can click on a student card to select or deselect them. Use the buttons provided to transfer students between the lists.
+3. To reset the application to its default state, click on the "Reset" button.
+
+## Screenshots
+
+_Screenshot 1: Main Interface_
+![Main Interface](./public/main-interface-ss.png)
+
+_Screenshot 2: Transfer Students_
+![Transfer Students](./public/action-ss.png)
+
+## License
+
+This project is licensed under the MIT License -
