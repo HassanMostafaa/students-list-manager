@@ -25,7 +25,7 @@ export const StudentsList: React.FC<StudentsListProps> = ({
       style={{
         width: 350,
         marginTop: 34,
-        boxShadow: "0 0 15px #cccccc7b",
+        boxShadow: "0 0 30px #cccccc55",
         borderRadius: 8,
         padding: 34,
       }}
